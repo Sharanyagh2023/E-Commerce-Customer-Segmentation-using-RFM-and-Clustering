@@ -53,17 +53,17 @@ New features were engineered to prepare the data for RFM analysis and customer-l
 ## EDA Insights
 Exploratory Data Analysis (EDA) revealed key patterns and distributions:
 - **Top Sales Countries**: The United Kingdom generates the highest sales, followed by India and Germany. (See plot below)
-  ![Top 10 Countries by Sales Revenue](path/to/country_sales_plot.png)
+  ![Top 10 Countries by Sales Revenue]
 - **Most Sold Products (Quantity)**: USB-C Cable, Cotton Bedsheet, and Smart Watch Strap were among the top.
-  ![Top 10 Most Sold Products by Quantity](path/to/product_sales_plot.png)
+  ![Top 10 Most Sold Products by Quantity]
 - **Highest Revenue Products**: Bluetooth Speaker, Running Shoes, and Denim Jacket generated the most revenue.
-  ![Top 10 Products by Revenue](path/to/product_revenue_plot.png)
+  ![Top 10 Products by Revenue]
 - **Purchase Frequency Distribution**: Most customers exhibit low purchase frequency (1-3 purchases), with a long tail of highly frequent buyers.
-  ![Distribution of Customer Purchase Frequency](path/to/frequency_distribution_plot.png)
+  ![Distribution of Customer Purchase Frequency]
 - **Order Value Distribution**: The average order value is right-skewed, indicating many smaller orders and a few very large ones, suggesting significant outliers.
-  ![Distribution of Customer Average Order Value](path/to/order_value_distribution_plot.png)
+  ![Distribution of Customer Average Order Value]
 - **Outliers**: Box plots for `Quantity`, `UnitPrice`, and `Revenue` confirmed the presence of significant outliers, reflecting some very large transactions or high-value items/quantities.
-  ![Box Plots of Quantity, UnitPrice, and Revenue](path/to/outlier_boxplots.png)
+  ![Box Plots of Quantity, UnitPrice, and Revenue]
 - **High-Value Customers**: Identified the top 10 customers based on `Monetary` value.
 
 ## Clustering Approach
@@ -71,10 +71,10 @@ K-Means clustering was applied to segment customers based on their RFM features:
 - **Feature Selection**: `Recency`, `Frequency`, and `Monetary` features from `rfm_df` were selected.
 - **Scaling**: Features were scaled using `StandardScaler` to ensure that no single feature dominates the clustering process.
 - **Optimal K Determination**: The Elbow Method was used to identify the optimal number of clusters. The plot indicated that `k=3` was the most suitable choice.
-  ![Elbow Method for Optimal K](path/to/elbow_method_plot.png)
+  ![Elbow Method for Optimal K]
 - **Model Training**: A K-Means model was trained with 3 clusters, and cluster labels were assigned to both `rfm_df` and `customer_features`.
 - **Visualization**: Clusters were visualized in 2D using Principal Component Analysis (PCA) for dimensionality reduction.
-  ![K-Means Clustering Visualization (2D PCA)](path/to/pca_clustering_plot.png)
+  ![K-Means Clustering Visualization (2D PCA)]
 
 ## Cluster Interpretation
 Three distinct customer segments were identified, each with unique characteristics:
