@@ -109,7 +109,8 @@ Actionable strategies were developed for each customer segment:
 ## How to Run the Project
 To run this project, follow these steps:
 
-1.  **Open in Google Colab**: You can open this notebook directly in Google Colab.
+1.  **Open in Google Colab**: can open this notebook directly in Google Colab.
 2.  **Upload Dataset**: Ensure the `ecommerce_customer_segmentation.xlsx` file is uploaded to your Colab environment's `/content/` directory.
 3.  **Run Cells Sequentially**: Execute each code cell in the notebook in order, from top to bottom. This will perform data loading, cleaning, feature engineering, EDA, clustering, and generate all visualizations and interpretations.
 4.  **Review Outputs**: Examine the outputs of each cell, including dataframes, plots, and printed statements, to follow the analysis flow.
+5.  One can also execute it in Jupyter notebook cloud platform or desktop application.
